@@ -3,10 +3,10 @@ package azure
 import (
   "encoding/json"
   "context"
-	"fmt"
+  "fmt"
+  "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
+  "github.com/Azure/azure-sdk-for-go/sdk/keyvault/azsecrets"
   "log"
-	"github.com/Azure/azure-sdk-for-go/sdk/keyvault/azsecrets"
-	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 )
 
 func GetSecretData(name, keyvault string) (map[string]string, error) {
